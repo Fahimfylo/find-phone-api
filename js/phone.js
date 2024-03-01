@@ -20,7 +20,8 @@ const displayPhones = phones => {
         <figure><img src="${phone.image}" alt="" /></figure>
         <div class="card-body">
           <h2 class="card-title">${phone.phone_name}</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <p>Whether you're an Android aficionado or an iOS enthusiast, we've got something for everyone</p>
+          <p>Price : 00</p>
           <div class="card-actions justify-end">
             <button class="btn btn-primary">Buy Now</button>
           </div>
@@ -36,5 +37,9 @@ const handleSearch = () => {
   const searchText = searchField.value;
   console.log(searchText);
   loadPhone(searchText);
+}
+const handleSearch2 = () =>{
+  const searchField = document.getElementById('search-field2')
+  const searchText = searchField.value;
 }
 // loadPhone()

@@ -14,7 +14,7 @@
         <nav>
             <div class="navbar bg-base-100">
                 <div class="flex-1">
-                  <a class="btn btn-ghost text-2xl">Gada Electronics</a>
+                  <a class="btn btn-ghost text-3xl">Gada Electronics</a>
                 </div>
                 <div class="flex-none">
                   <div class="dropdown dropdown-end">
@@ -58,8 +58,12 @@
     </header>
     <main class="container mx-auto mt-8">
       <section class="bg-gray-200 p-4 m-4 rounded-xl">
-        <input id="search-field" type="text" placeholder="Search here" class=" bg-black text-white input input-bordered w-full max-w-xs" />
-        <button onclick="handleSearch()" class="btn btn-sm sm:btn-sm mt-2 md:btn-md lg:btn-lg">Search</button>
+        <input id="search-field" type="text" placeholder="Search here" class=" border-none bg-black text-white input input-bordered w-full max-w-xs" />
+        <button onclick="handleSearch()" class="btn btn-primary  bg-red-500 border-none text-white mt-3">Search</button>
+        
+      <!--Another search field-->
+      <input type="text" id="search-field2" placeholder="Search..." class="mt-3 border-none input input-bordered w-full max-w-xs" />
+      <button class="btn btn-primary bg-red-500 border-none text-white mt-3">Search HERE</button>
       </section>
       <!-- search result-->
         <section>
@@ -68,7 +72,6 @@
         </section>
     </main>
     <footer> 
-
     </footer>
     <script src="js/phone.js"></script>
 </body>
